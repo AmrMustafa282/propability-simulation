@@ -1,0 +1,366 @@
+@font-face {
+    font-family:'poppins';
+    src: url(Poppins-Medium.ttf);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: poppins;
+    text-align: center;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body
+{
+    background-color: #2a2738;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+header
+{
+    width: 100%;
+    height: 100px;
+    background-color: #2a2738;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    min-width: 940px;
+    /* margin-inline: 50px; */
+}
+nav
+{
+    width: 90%;
+    height: 100%;
+    background-color: #2a2738;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo
+{
+    font-size: 40px;
+    width: 40%;
+    /* margin-top: 10px; */
+    display:flex;
+
+}
+nav .ul
+{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+nav .ul ul
+{
+    list-style-type: none;
+    display:inline-flex;
+    width: 35%;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+nav .ul ul li a , nav   .logo a  
+{
+    color: white;
+}
+.ul ul li a:hover
+{
+    transition: .4s;
+    color: rgb(233, 62, 62);
+}
+@keyframes ani {
+    from{width:0%}
+    to{width: 100%;}
+
+}
+.hovered
+{
+    animation-name: ani;
+    animation-duration: .6s;
+    animation-direction: alternate;
+    transition: 1s;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+main
+{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1920px;
+    min-width: 940px;
+}
+
+main .getInfo1
+{
+    width: 600px;
+    height: 400px;
+    
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-top: 50px ;
+}
+main .getInfo1 .start
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+main .getInfo1 .start .txt
+{
+    width: 400px;
+    height: 48px;
+    border: none;
+    border-radius: 6px;
+}
+main .getInfo1 .start .btn
+{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+    background-color: #2a2738;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+main .getInfo1 .start label
+{
+    color: white;
+    font-size: 22px;
+    margin-bottom: -20px;
+}
+main .getInfo2
+{
+    /* margin-top:500px ; */
+    /* background-color: rgb(3, 33, 43); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+main .getInfo2 .tabls
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main .getInfo2 input
+{
+
+    width: 300px;
+    height: 48px;
+    border: none;
+    border-radius: 6px;
+}
+
+main .getInfo2 .tableofinfo1 , main .getInfo2 .tableofinfo2
+{
+    width: 400px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+
+}
+
+.submit2
+{
+    margin-top: 70px;
+    width: 200px;
+    height: 38px;
+    border: none;
+    border-radius: 6px;
+    color: black;
+    font-size: 16px;
+    order: 9;
+    grid-area: b;
+
+}
+.hid1 , .hid2
+{
+    color: white;
+    font-size: 22px;
+    display: none;
+}
+.showhid
+{
+    display: block;
+}
+input
+{
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+}
+.btn
+{
+    padding: 0;
+}
+.tabsec
+{
+    
+    margin-top: 130px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1920px;
+    min-width: 940px;
+    margin-bottom: 50px;
+}
+.tabsec table
+{
+    width: 1000px;
+    background-color: rgb(207, 206, 206);
+}
+main .draw
+{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 0;
+    gap: 180px;
+
+}
+main .draw .canv1 , main .draw .canv2
+{
+    height: 300px;
+    width: 400px;
+}
+main .draw .canv1 #myChart1 , main .draw .canv2 #myChart2
+{ 
+    height: 300px;
+    width: 400px;
+    
+}
+
+
+.clear
+{
+    display: none;
+}
+.show
+{
+    display: block;
+}
+.movingbtn
+{
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-image: url(arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png);
+    background-size: cover;
+    /* transform: scale(1.1); */
+    background-color: inherit;
+    cursor: pointer;
+    position: fixed;
+    right: -40px;
+    bottom: 15px;
+    transition: 0.2s;
+    
+}
+.movingbtn.show
+{
+    right: 30px;
+    transform: rotate(-90deg) scale(1.3);
+}
+.random
+{
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.random .rand
+{
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 600px;
+    height: 400px;
+    
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-top: 50px ;
+}
+.random .rand label 
+{
+    color: white;
+    font-size: 22px;
+    margin-bottom: -10px;
+}
+
+.random .rand .one ,.span ,.oneplus
+{
+    width: 400px;
+    height: 48px;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+}
+.random .rand .two ,.two2 ,.two3 ,.two33
+{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+    background-color: #2a2738;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 0;
+}
+.span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:18px;
+    color: black;
+    font-weight: 600;
+}
+.random 
+{
+    margin-top: 200px;
+    margin-bottom: 140px;
+}
+.tabsec
+{
+    margin-top: 0px;
+}
+.spanp ,.spanpp
+{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+}

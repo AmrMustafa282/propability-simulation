@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="">ADVENTURES</a> </div>
+            <div class="ul">
+                <ul>
+                    <li><a class="a" href="">Home</a><div class="hovered"></div></li>
+                    <li><a class="a" href="">Adventures</a><div class="hover"></div></li>
+                    <li><a class="a" href="">Services</a><div class="hover"></div></li>
+                    <li><a class="a" href="">About</a><div class="hover"></div></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="getInfo1 " id="sec1">
+            <div class="start">
+                <label for="txtt">Enter number of cases</label>
+                <input type="text" class="txt" id="txtt">
+                <input type="submit" value="Start" class="btn"> 
+                <input type="submit" value="Clear" class="btn clear " > 
+            </div>
+        </section>
+        <section class="getInfo2" id="sec2">                            
+            <!--                        -->
+            <div class="tabls">
+                <div class="tableofinfo1">
+                <div class="hid1">Enter the Demond value</div>
+            </div>
+            <div class="tableofinfo2">
+                <div class="hid2">Enter the frequancy value</div>
+            </div>
+            </div>
+            <div class="butt">
+
+            </div>
+            
+        </section>
+
+        <div class="draw">
+            <section class="canv1">
+            <canvas id="myChart1"></canvas>     <!--  one -->
+        </section>
+        <section class="canv2">
+            <canvas id="myChart2"></canvas>        <!--  two -->
+        </div>
+        
+        <section class="tabsec">
+            <div class="table" id="sec3"></div>
+        </section>
+        
+        
+        </section>
+        <section class="random">
+
+            <div class="rand">
+                <label for="">In Which Interval</label>
+                <input type="text" class="one">
+                <input type="submit" class="two" value="Check">           
+            </div>
+            <div class="oncheck rand">
+                <span class="span">
+
+                </span>
+                <input type="submit" class="two2" value="Check Again">    
+            </div>
+            
+        </section>
+        <section class="simulate-demond random">
+
+            <div class="rand rand2">
+                <label for="">How Many Days</label>
+                <input type="text" class="oneplus">
+                <input type="submit" class="two3" value="Check">      
+            </div>
+            <div class="oncheck2 rand">
+                <span class="spanp"></span>
+                <span class="spanpp">
+                </span>
+                <input type="submit" class="two33" value="Check Again">   
+            </div>
+
+        </section>
+        
+    </main>
+    <footer>
+
+    </footer>
+    <button class="movingbtn"></button>
+    <script>
+        
+        
+        const scrollbtn=document.querySelector(".movingbtn");
+        scrollbtn.onclick=function()
+        {
+            window.scrollTo({
+                top:15,behavior:"smooth",
+            })
+        };
+        
+        
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
